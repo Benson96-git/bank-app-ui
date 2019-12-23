@@ -1,0 +1,78 @@
+.b_image{
+	background-color:#E8ABAE;
+    background: url("https://img.etimg.com/thumb/width-640,height-480,imgsize-191253,resizemode-1,msid-70256874/icici-bank-launches-digital-banking-platform-instabiz-for-msmes.jpg");
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.navbar {
+  width: 100%;
+  background-color:#990033;
+  overflow:auto ;
+margin-top:0px;
+  color: white;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+  
+
+}
+.input-group{
+  top:125px;
+  position: absolute;;
+  width:280px;
+  transition:.5s;
+  
+}
+input[type=text] , input[type=password]{
+  width:100%;
+  padding:10px 0;
+  margin:5px  0;
+  border-left:0;
+  border-top:0;
+  border-right:0;
+  border-bottom: 1px solid rgb(34, 7, 7);
+  outline:none;
+  background:transparent;
+  color: white;
+  
+}
+.input-field placeholder{
+	color:black;
+	font-family:Arial;
+}
+
+.submit-btn{
+  width: 85%;
+  padding: 10px;
+  cursor:pointer;
+  display:block;
+  margin:auto;
+  background: linear-gradient(to right,#ff105f,#5f8be9);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  color:black;
+}

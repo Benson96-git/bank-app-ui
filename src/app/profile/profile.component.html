@@ -1,0 +1,33 @@
+<div class="navbar">
+    <h1 align="center">ZECURE BANKING PORTAL</h1>
+      <a routerLink="/"><i class="fa fa-fw fa-user"></i> Logout</a> 
+      <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+      <a href="email"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+      <a  href="About.html" ><i class="fa fa-fw fa-home"></i>About</a>
+    </div>
+    
+    <form >
+      <div class="container">
+        <h1>My Account</h1>
+        <hr>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text"  name="email" value="ben@gmail.com"readonly>
+        
+        <label for="username"><b>Username</b></label>
+        <input type="text" name="username" value="Benson V Thomas" readonly>
+        <label for="psw"><b>Account Number</b></label>
+       <input type="text" name="password"  value="4567832125678" readonly>
+    
+        <label for="psw-repeat"><b> Type of Account</b></label>
+       <input  value="Savings"   type="text" name="password" readonly value="savings">
+       <label for="psw-repeat"><b> Current Balance</b></label>
+       <input  value="Savings"   type="text" name="password" readonly value="10,000 Rs">
+        <hr>
+        <button  (click)="alert2()" type="submit"  class="registerbtn" >Transaction History</button>
+        <button  (click)="alert1()" type="submit"  class="registerbtn" >Back to home</button>
+       
+      </div>
+      
+
+    

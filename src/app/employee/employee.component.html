@@ -1,0 +1,43 @@
+
+<head>
+
+
+
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        </head>
+        
+        <div class="b_image">
+        <div class="navbar">
+        <h1 align="center">ZECURE BANKING PORTAL</h1>
+          <a routerLink="/"><i class="fa fa-fw fa-user"></i>User Login</a> 
+          <a class="active"routerLink="employee"><i class="fa fa-fw fa-search"></i> Employee Login</a> 
+          <a href="mailto:benson@gmail.com"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+          <a routerLink="/about" ><i class="fa fa-fw fa-home"></i>About</a>
+        </div>
+        
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <div align="center" class = "main" style="width:380px;height:400px;position:relative;margin:6% auto;background:rgb(201, 182, 186);padding: 5px;opacity:97%;">
+          <h1 style="color:black;">Login</h1>
+        
+          
+          <div class="input-group" >
+              <form class="form-container" role="form" #form="ngForm" autocomplete="off">
+        
+                   <input type="text" name="name"placeholder="Username" class="form-control" required minlength="4" [(ngModel)]="username" #usernames="ngModel">
+                   <div *ngIf="usernames.invalid && (usernames.dirty || usernames.touched)" class="validation-error" style="color: red;">
+                      Username is required with minlength 4.
+                   </div>
+                        <input  type="password" name="password"placeholder="Password" class="form-control" required minlength="4" [(ngModel)]="password" #passwords="ngModel"><br>
+                        <div *ngIf="passwords.invalid && (passwords.dirty || passwords.touched)" class="validation-error" style="color: red;">
+                            Password is required with minlength 4.
+                        </div><br>
+                        <!-- <a routerLink="home" ><input type="submit" class="submit-btn" value="LOG IN"></a><br> -->
+                     <button class="btn btn-info btn-block"  class="submit-btn" type="submit" style="background-color:green" [disabled]="form.invalid" (click)="home()">Login</button><br>
+                     
+            
+         
+                <a routerLink="/forgot">FORGOT PASSWORD</a>
+         
+        </form>
+        </div>
+        </div>

@@ -1,0 +1,33 @@
+<div class="navbar">
+    <h1 align="center">ZECURE BANKING PORTAL</h1>
+      <a routerLink="/"><i class="fa fa-fw fa-user"></i> Logout</a> 
+      <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
+      <a href="email"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+      <a routerLink="/about" ><i class="fa fa-fw fa-home"></i>About</a>
+    </div>
+    
+    <form >
+      <div class="container">
+        <h1>Reset your password</h1>
+        <hr>
+    
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="eg:xyz@qwe.com" name="email" required [(ngModel)]="email">
+        
+        <label for="username"><b>Username</b></label>
+        <input type="text" placeholder="Enter your username"title="Username must have 3 minimum characters to atmost 20 characters"name="username" required minlength="3" maxlength="20" [(ngModel)]="uname">
+        <label for="psw"><b>Enter New Password</b></label>
+       <input title="Password must contain at least 6 characters, including UPPER/lowercase and numbers" type="password" name="password"  placeholder="Enter your new password" required [(ngModel)]="psw">
+    
+        <label for="psw-repeat"><b>Confirm Password</b></label>
+       <input title="Please enter the same Password as above"  placeholder="Enter the same password as above" type="password" name="password"required [(ngModel)]="cpsw">
+        <hr>
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+       
+    
+        <button  (click)="alert1()" type="submit"  class="registerbtn" >submit</button>
+      </div>
+      
+      
+    </form>
+    
